@@ -1,4 +1,5 @@
 black
+vulture
 qcelemental
 pytest
 jax
