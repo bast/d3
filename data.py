@@ -42,7 +42,7 @@ def read_coefficients():
             coefficients_original[(b % 100, a % 100, b // 100, a // 100)] = [x, c2, c1]
 
     coefficients = defaultdict(list)
-    for (i, j, k, l), v in coefficients_original.items():
+    for (i, j, k, _), v in coefficients_original.items():
         x, c1, c2 = tuple(v)
         coefficients[(i + 1, j + 1)].append((x, c1, c2))
 
